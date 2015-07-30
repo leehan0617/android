@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ex20</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="tv">안녕하세요</string>
+	<string name="rbtn1">10</string>
+	<string name="rbtn2">15</string>
+	<string name="rbtn3">20</string>
+	<string name="rbtn4">25</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ex19</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	
+    <string name="tv">당신의 고향은?</string>
+    <string name="area1">서울</string>
+    <string name="area2">경기도</string>
+    <string name="area3">충청도</string>
+    <string name="area4">전라도</string>
+    <string name="area5">경상도</string>
+    <string name="area6">강원도</string>
+    <string name="area7">제주도</string>
+</resources>

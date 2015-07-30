@@ -1,0 +1,50 @@
+package com.kosta.ex18;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.Toast;
+import android.widget.CompoundButton.OnCheckedChangeListener;
+
+public class MainActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		CheckBox ch1_hobby = (CheckBox) findViewById(R.id.ch1_hobby);
+		CheckBox ch2_hobby = (CheckBox) findViewById(R.id.ch2_hobby);
+		CheckBox ch3_hobby = (CheckBox) findViewById(R.id.ch3_hobby);
+		CheckBox ch4_hobby = (CheckBox) findViewById(R.id.ch4_hobby);
+		
+		ch1_hobby.setOnCheckedChangeListener(listener);
+		ch2_hobby.setOnCheckedChangeListener(listener);
+		ch3_hobby.setOnCheckedChangeListener(listener);
+		ch4_hobby.setOnCheckedChangeListener(listener);
+	}
+
+	OnCheckedChangeListener listener = new OnCheckedChangeListener(){
+
+		@Override
+		public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+			switch(buttonView.getId()){
+				case R.id.ch1_hobby:
+					Toast.makeText(MainActivity.this, buttonView.getText() + "," + isChecked, Toast.LENGTH_SHORT).show();
+					break;
+				case R.id.ch2_hobby:
+					Toast.makeText(MainActivity.this, buttonView.getText() + "," + isChecked, Toast.LENGTH_SHORT).show();
+					break;
+				case R.id.ch3_hobby:
+					Toast.makeText(MainActivity.this, buttonView.getText() + "," + isChecked, Toast.LENGTH_SHORT).show();
+					break;
+				case R.id.ch4_hobby:
+					Toast.makeText(MainActivity.this, buttonView.getText() + "," + isChecked, Toast.LENGTH_SHORT).show();
+					break;
+			}
+		}
+		
+	};
+	
+}
